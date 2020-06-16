@@ -1,5 +1,6 @@
 import java.util.Date;
 
+
 public class HelloWorld {
 
     public static void main(String[] args) {
@@ -28,7 +29,6 @@ public class HelloWorld {
         // textNieko <- 0
         String textNieko = null;
         Date data = null;
-
 
         /*
         bitas - 0 arba 1
