@@ -46,6 +46,11 @@ public class DideliuSkaiciuSudetis {
         }
         return rezultatas;
     }
+
+    /**
+     * spausdiname masyva
+     * @param skaicius masyvas
+     */
         static void spausdinti(byte[] skaicius){
             for (int i = skaicius.length - 1; i >= 0; i--) {
                 System.out.print(skaicius[i]);
