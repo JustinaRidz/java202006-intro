@@ -21,6 +21,7 @@ public class HelloWorld {
         //
         String text = 5 + 123.45 + "Tekstas '" + c2 + "' " +
                 "\n tekstas isvestas is naujos eilutes \t Isveda didesni tarpa \\Irasome i teksta flasha \"Isvestas tekstas su kabutemis\" " +
+                                                     // t
                 (100 + 4); // ... 104
         System.out.println(text);
         System.out.println("123" + 4);

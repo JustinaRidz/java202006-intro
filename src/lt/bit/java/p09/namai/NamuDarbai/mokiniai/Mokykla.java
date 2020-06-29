@@ -1,36 +1,29 @@
 package lt.bit.java.p09.namai.NamuDarbai.mokiniai;
 
 public class Mokykla {
-        private String vardas;
-        private String pavarde;
-        private int klase;
+    /**
+     * visu mokyklos mokiniu sarasas
+     */
+    private int maxMokiniuSkaicius = 1000;
+    private Mokinys[] mokiniai = new Mokinys[maxMokiniuSkaicius];
+    private int mokiniuSkaicius = 0;
 
-        public String getVardas() {
-            return vardas;
+
+    public void naujasMokinys(Mokinys mokinys) {
+        if (mokiniuSkaicius < maxMokiniuSkaicius) {
+            mokiniai[mokiniuSkaicius] = mokinys;
+            mokiniuSkaicius++;
+        } else {
+            // throw new RuntimeException("Per daug mokiniu!!!");
+            System.out.println("Per daug mokiniu!!!");
         }
+    }
 
-        public void setVardas(String vardas) {
-            this.vardas = vardas;
-        }
+    public Mokinys[] getMokiniai() {
+        return mokiniai;
+    }
 
-        public String getPavarde() {
-            return pavarde;
-        }
-
-        public void setPavarde(String pavarde) {
-            this.pavarde = pavarde;
-        }
-
-        public int getKlase() {
-            return klase;
-        }
-
-        public void setKlase(int klase) {
-            this.klase = klase;
-        }
-
-    @Override
-    public String toString(){
-            return klase + " " + vardas + " " + pavarde;
+    public int getMokiniuSkaicius() {
+        return mokiniuSkaicius;
     }
 }
